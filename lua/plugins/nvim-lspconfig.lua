@@ -125,6 +125,7 @@ return {
                 end,
             },
         }
+        vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Open floating diagnostic" })
 
         local capabilities = require('blink.cmp').get_lsp_capabilities()
 
